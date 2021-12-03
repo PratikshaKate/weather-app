@@ -1,0 +1,26 @@
+<html>
+  <head>
+      <title>Weather</title>
+      <link rel="icon" href="/images/logo.png">
+    <link href="css/style.css" rel="stylesheet" />
+   
+  </head>
+  <body>
+    <div class="main-content">
+{{>header}}
+    <form>
+      <input id="locationInput" placeholder="location">
+      <button>Search </button>
+    </form>
+     <p id="errorMessage">
+       
+     </p>
+     <p id="forecastMessage">
+
+     </p>
+    </div>
+    
+    {{>footer}}
+     <script src="js/client.js"></script>
+  </body>
+</html>
