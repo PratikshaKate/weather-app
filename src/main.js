@@ -13,6 +13,8 @@ const publicDirPath = path.join(__dirname, "../public");
 const viewsPath = path.join(__dirname, "../Templates/Views");
 const partialPath = path.join(__dirname, "../Templates/Partials");
 
+const PORT = process.env.PORT || 3000;
+
 app.use(express.static(publicDirPath));
 
 //Setting up handlebars in the express for dynamic pages
@@ -135,6 +137,6 @@ app.get("*", (req, resp) => {
   });
 });
 
-app.listen(3000, () => {
+app.listen(PORT, () => {
   console.log("Server is up and ready at port number 3000.");
 });
